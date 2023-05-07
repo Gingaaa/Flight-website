@@ -1,0 +1,47 @@
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a routerLink="index.html"><img src="assets/img/logo.png" class="img-fluid"></a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:
+            true}"><a class="nav-link scrollto" routerLink="home">Home</a></li>
+          <li class="dropdown" [routerLinkActive]="'active'">
+            <a routerLink=""><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a routerLink="who-we-are"><span>Who we are</span> </a>
+              <li class="dropdown"><a routerLink="what-we-do"><span>What we do</span></a>
+              <li class="dropdown"><a routerLink="team"><span>Team</span> </a>
+              <li class="dropdown"><a routerLink="leadership"><span>Leadership</span></a>
+              <!-- <li class="dropdown">
+                <a href="partnership.html"><span>Partnership</span></a>
+              </li> -->
+            </ul>
+          </li>
+
+          <li class="dropdown" [routerLinkActive]="'active'">
+            <a routerLink=""><span>Our Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a routerLink="sprucefare">Spruce Fare</a></li>
+              <li class="dropdown"><a routerLink="fare-consolidation"><span>Fare Consolidation</span> </a>
+              <li class="dropdown"><a routerLink="digital-marketing"><span>Digital marketing</span></a>
+              <li class="dropdown">
+                <a routerLink="product-development"><span>Product Development</span> </a>
+              </li>
+            </ul>
+          </li>
+          <li [routerLinkActive]="'active'"><a class="nav-link scrollto o" routerLink="services">Services</a></li>
+          <li [routerLinkActive]="'active'"><a class="nav-link scrollto" routerLink="life-at-sprucefly">Life at Sprucefly</a></li>
+          <li [routerLinkActive]="'active'"><a class="nav-link scrollto" routerLink="career">Career</a></li>
+          <!--<li><a class="nav-link scrollto" href="blog.html">Blog</a></li>-->
+
+          <li [routerLinkActive]="'active'"><a class="nav-link scrollto" routerLink="contact">Contact</a></li>
+          <li><a class="getstarted scrollto" routerLink="https://mysmartairfares.com/">Book Your Trip Now</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
